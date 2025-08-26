@@ -1,103 +1,36 @@
-import Image from "next/image";
+"use client";
 
+import { redirect} from "next/navigation";
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+  return (
+    
+    <>
+    <div className="page text-red-600 ">
+      <div className="text-center flex flex-col justify-center items-center text-black bg-red-600 w-full h-[256px]">
+        <h1 className="text-8xl font-bold">Free ULTRAKILL</h1>
+        <h1 className="text-4xl font-bold">very real not fake!!</h1>
+      </div>
+
+      <section id="downloads" className="flex flex-col justify-start items-center text-red-600 pl-2  mt-8 gap-3">
+        <span className="text-5xl font-bold">Downloads</span>
+        <button onClick={function () {window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}}  className="border-2 borer-red-600 py-3 px-3 w-72 text-2xl hover:bg-red-600 hover:text-black">Download for Windows</button>
+
+      </section>
+      <section className="flex flex-col justify-start items-center text-red-600 pl-2  mt-8 gap-4 text-center">
+        <span className="text-5xl font-bold">What is <span className="underline">ULTRAKILL</span>?</span>
+        <span className="text-2xl max-w-196">Ultrakill is a fast-paced first-person shooter with an emphasis on movement and stylish techniques. The player must make their way through an interpretation of Dante's layers of Hell, with three acts each made up of three layers being divided into multiple levels. As of February 2025, only Act I and Act II have been fully released, with only the first layer of Act III being available.</span>
+        <span className="text-2xl max-w-196">The player battles enemies using an arsenal of weapons, having a primary and alternate attack, and various robotic arms. These have unique interactions with each other, evoking the combination attacks of games like Devil May Cry. Many of the advanced techniques in the game are a result of combining various elements of the player's arsenal. To encourage aggressive gameplay, the player can heal by absorbing the blood of enemies through close-range combat or parrying enemy attacks. The player's performance is judged by a "style meter", similar to games such as Devil May Cry. The style meter rewards the player for performing advanced and flashy moves, as well as encouraging aerial maneuvering and quickly swapping between weapons.</span>
+        <span className="text-2xl max-w-196">At the end of each level, the player's style ranking is combined with time taken and number of kills to determine a letter grade for that run. Achieving an S rank in all three categories without dying throughout that run will earn the player a P (Perfect) rank, the highest possible rank for a level.</span>
+        <span className="text-2xl max-w-196">In addition to the main campaign, Ultrakill provides various secret levels parodying other video game genres. The game has an endless survival mode called "The Cyber Grind" where players can compete against other players' high scores, and a sandbox mode in which the player can spawn enemies and various objects. Achieving a P rank in all levels of an act allows the player to access the act's "prime sanctum", each containing a secret boss fight.</span>
+      
+      </section>
     </div>
+    <footer className="bg-red-600 h-20 text-center pt-4">
+      I am not affiliated with New Blood Interactive!
+    </footer>
+    <audio src="/resources/thefireisgone.mp3" loop autoPlay></audio>
+    </>
   );
 }
