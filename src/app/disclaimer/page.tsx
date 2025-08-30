@@ -6,27 +6,6 @@ import Footer from "../components/Footer";
 
 
 export default function Disclaimer() {
-  const [device, setDevice] = useState("Unknown")
-  useEffect(() => {
-    const platform = window.navigator.platform.toLowerCase()
-    if (platform.startsWith("win"))  {
-      setDevice("Windows")
-      return
-    }
-    else if (platform.startsWith("mac"))  {
-      setDevice("MacOS")
-      return
-    }
-    else if (platform.startsWith("linux"))  {
-      setDevice("Linux")
-      return
-    }
-    else if (platform == "iphone")  {
-      setDevice("iPhone")
-      return
-    }
-      
-  })
   return (
     
     <>
